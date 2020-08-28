@@ -1,4 +1,5 @@
 const fs = require('fs');
+require('dotenv').config()
 const Discord = require('discord.js');
 const prefix = process.env.PREFIX;
 const token = process.env.BOT_TOKEN;
