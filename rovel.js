@@ -1,7 +1,7 @@
 //require('dotenv').config();
 const path = require('path');
 const { Intents, MessageEmbed } = require('discord.js');
-const Client = require('./structures/Client');
+const Client = require('./framework/Client');
 const client = new Client({
  commandPrefix: process.env.PREFIX,
  owner: process.env.OWNERS.split(','),
