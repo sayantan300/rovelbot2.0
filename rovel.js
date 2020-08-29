@@ -1,7 +1,6 @@
 //require('dotenv').config();
 const path = require('path');
 const { Intents, MessageEmbed } = require('discord.js');
-const rovelchannel = client.guilds.cache.get(process.env.SERVER_ID).channels.cache.get(process.env.LOG_CHANNEL_ID);
 const Client = require('./structures/Client');
 const client = new Client({
  commandPrefix: process.env.PREFIX,
@@ -17,6 +16,7 @@ function formatNumber(number, minimumFractionDigits = 0) {
   maximumFractionDigits: 2
  });
 }
+const rovelchannel = client.guilds.cache.get(process.env.SERVER_ID).channels.cache.get(process.env.LOG_CHANNEL_ID);
 client.registry
  .registerDefaultTypes()
  .registerTypesIn(path.join(__dirname, 'types'))
