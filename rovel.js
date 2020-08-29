@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 const path = require('path');
 const { Intents, MessageEmbed } = require('discord.js');
 const rovelchannel = client.guilds.cache.get(process.env.SERVER_ID).channels.cache.get(process.env.LOG_CHANNEL_ID);
